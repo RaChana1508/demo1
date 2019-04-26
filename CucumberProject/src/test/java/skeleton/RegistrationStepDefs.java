@@ -12,7 +12,7 @@ import cucumber.api.java.en.Then;
 import cucumber.api.java.en.When;
 
 import pages.RegisterPage;
-import selenium.tests.DriverUtility;
+
 
 public class RegistrationStepDefs {
 	WebDriver driver;
