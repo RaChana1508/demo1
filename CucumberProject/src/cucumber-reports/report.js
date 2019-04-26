@@ -42,42 +42,4 @@ formatter.match({
 formatter.result({
   "status": "passed"
 });
-formatter.scenario({
-  "name": "TestMeApp addproduct",
-  "description": "",
-  "keyword": "Scenario"
-});
-formatter.before({
-  "status": "passed"
-});
-formatter.step({
-  "name": "add product page",
-  "keyword": "Given "
-});
-formatter.match({
-  "location": "adminLogStepsdefs.add_product_page()"
-});
-formatter.result({
-  "status": "passed"
-});
-formatter.step({
-  "name": "admin enters the data to add product",
-  "keyword": "When "
-});
-formatter.match({
-  "location": "adminLogStepsdefs.admin_enters_the_data_to_add_product()"
-});
-formatter.result({
-  "status": "passed"
-});
-formatter.step({
-  "name": "admin add product successfully",
-  "keyword": "Then "
-});
-formatter.match({
-  "location": "adminLogStepsdefs.admin_add_product_successfully()"
-});
-formatter.result({
-  "status": "passed"
-});
 });

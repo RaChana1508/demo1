@@ -2,7 +2,7 @@ package cucumbercasestudy;
 
 import java.util.concurrent.TimeUnit;
 
-
+import org.junit.Assert;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.support.PageFactory;
 import cucumber.api.java.Before;
@@ -35,11 +35,23 @@ public class adminLogStepsdefs {
 	    AdminLoginPage.password.sendKeys("Password456");
 	    AdminLoginPage.loginbutton.click();
 	    AdminLoginPage.addproduct.click();
+	    AdminLoginPage.scat.click();
+	    AdminLoginPage.select();
+	    AdminLoginPage.subcategory.click();
+	    AdminLoginPage.selectsub();
+	    AdminLoginPage.pdtname.sendKeys("Lalitha");
+	    AdminLoginPage.price.sendKeys("45000");
+	    AdminLoginPage.quantity.sendKeys("1");
+	    AdminLoginPage.brand.sendKeys("hp");
+	    AdminLoginPage.description.sendKeys("laptop");
+	    AdminLoginPage.addpdtbtn.click();
+	    
 	}
 
 	@Then("user  login successfully")
 	public void user_login_successfully() {
-	   // Assert.assertTrue(AdminLoginPage.message.getText().contains("admin"));
+	 Assert.assertTrue(AdminLoginPage.regsuccessfully.getText().contains("Succesfully"));
+	
 	}
 	
 
