@@ -47,5 +47,5 @@ public class AdminLoginPage {
 	public static WebElement addpdtbtn;
 	@FindBy(how=How.XPATH,using="//div/div/div/form/b/i")
 	public static WebElement regsuccessfully;
-
+	
 }

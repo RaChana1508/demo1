@@ -16,7 +16,7 @@ import selenium.tests.DriverUtility;
 
 public class RegistrationStepDefs {
 	WebDriver driver;
-	//@Before
+	@Before
 	public void init()
 	{
 
@@ -33,9 +33,9 @@ public class RegistrationStepDefs {
 	@When("user enters the data for registration")
 	public void user_enters_the_data_for_registration() {
 		RegisterPage.gender.click();
-		RegisterPage.firstname.sendKeys("Rachana");
+		RegisterPage.firstname.sendKeys("Rachan");
 		RegisterPage.lastname.sendKeys("Biyyapu");
-		RegisterPage.email.sendKeys("rachana37@gmail.com");
+		RegisterPage.email.sendKeys("rachana38@gmail.com");
 		RegisterPage.password.sendKeys("rachana123");
 		RegisterPage.confirmpassword.sendKeys("rachana123");
 		RegisterPage.registerbutton.click();

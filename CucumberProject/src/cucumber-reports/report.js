@@ -1,11 +1,11 @@
-$(document).ready(function() {var formatter = new CucumberHTML.DOMFormatter($('.cucumber-report'));formatter.uri("file:src/test/resources/cucumbercasestudy/adminlogin.feature");
+$(document).ready(function() {var formatter = new CucumberHTML.DOMFormatter($('.cucumber-report'));formatter.uri("file:src/test/resources/skeleton/demoWebShop.feature");
 formatter.feature({
-  "name": "TestMeApp Feature",
+  "name": "DemoWebShop Feature",
   "description": "",
   "keyword": "Feature"
 });
 formatter.scenario({
-  "name": "TestMeApp admin Login",
+  "name": "DemoWebShop registration",
   "description": "",
   "keyword": "Scenario"
 });
@@ -13,31 +13,31 @@ formatter.before({
   "status": "passed"
 });
 formatter.step({
-  "name": "url of the TestMeApp",
+  "name": "url of the demowebshop",
   "keyword": "Given "
 });
 formatter.match({
-  "location": "adminLogStepsdefs.url_of_the_TestMeApp()"
+  "location": "RegistrationStepDefs.url_of_the_demowebshop()"
 });
 formatter.result({
   "status": "passed"
 });
 formatter.step({
-  "name": "user enters the data for login",
+  "name": "user enters the data for registration",
   "keyword": "When "
 });
 formatter.match({
-  "location": "adminLogStepsdefs.user_enters_the_data_for_login()"
+  "location": "RegistrationStepDefs.user_enters_the_data_for_registration()"
 });
 formatter.result({
   "status": "passed"
 });
 formatter.step({
-  "name": "user  login successfully",
+  "name": "user is registered successfully",
   "keyword": "Then "
 });
 formatter.match({
-  "location": "adminLogStepsdefs.user_login_successfully()"
+  "location": "RegistrationStepDefs.user_is_registered_successfully()"
 });
 formatter.result({
   "status": "passed"
